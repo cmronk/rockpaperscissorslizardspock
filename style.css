@@ -1,7 +1,17 @@
-body {
+/* whole app */
+* {
     background: #15133c;
-    color: white;
+    color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+/* header */
+header h1 {
+    background: white;
+    color: #15133c;
+    padding: 20px;
+    width: 100%;
 }
 h1, h2 {
     text-align: center;
@@ -19,7 +29,7 @@ button {
 }
 .score {
     border: 3px solid white;
-    width: 250px;
+    width: 150px;
     margin: auto;
     font-size: 30px;
     text-align: center;
@@ -28,7 +38,7 @@ button {
 }
 
 .badge {
-    background: silver;
+    background: #5fc5ba;
     color: black;
     font-size: 15px;
     padding: 2px 10px;
@@ -42,7 +52,7 @@ button {
 #comp-label {
     position: absolute;
     top: 15px;
-    right:-25px;;
+    right:-55px;;
 }
 .result {
     font-size: 2rem;
