@@ -15,17 +15,29 @@ header h1 {
 }
 h1, h2 {
     text-align: center;
+    padding: 20px;
 }
 .flex-container {
     display: flex;
     align-content: center;
     justify-content: center;
 }
+.instructions {
+    text-align: center;
+    padding: 10px;
+}
+.instructions p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
 button {
     height: 100px;
     width: 100px;
     font-size: 3rem;
     border-radius: 50%;
+}
+button .fa {
+    color: #5fc5ba
 }
 .score {
     border: 3px solid white;
@@ -53,8 +65,4 @@ button {
     position: absolute;
     top: 15px;
     right:-55px;;
-}
-.result {
-    font-size: 2rem;
-    text-align: center;
 }
