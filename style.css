@@ -36,8 +36,18 @@ button {
     font-size: 3rem;
     border-radius: 50%;
 }
+#rules {
+    background: white;
+    color: #5fc5ba;
+    border-radius: 0;
+    width: auto;
+    height: 55px;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+}
 button .fa {
-    color: #5fc5ba
+    color: #5fc5ba;
 }
 .score {
     border: 3px solid white;
