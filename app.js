@@ -25,7 +25,6 @@ function getUserGuess() {
     let userChoice = "";
 
     function rock() {
-        
         userChoice = "rock";
         document.getElementById("results").innerHTML = "You Chose Rock!"
     }
