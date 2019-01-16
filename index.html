@@ -38,19 +38,19 @@
         <h2><span id="results"></span></h2>
     </div>
 
-    <div class="choices flex-container">
-        <button id="rock" onclick="rock(this.id)" value="rock"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
-        <button id="paper" onclick="paper(this.id)" value="paper"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
-        <button id="scissors" onclick="scissors(this.id)" value="scissors"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
-        <button id="lizard" onclick="lizard(this.id)" value="lizard"><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></button>
-        <button id="spock" onclick="spock(this.id)" value="spock"><i class="fa fa-hand-spock-o" aria-hidden="true"></i></button>
+    <div class="choices flex-container" id="guess">
+        <button onclick="rock()" input type="button" value="rock"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
+        <button onclick="paper()" input type="button" value="paper"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
+        <button onclick="scissors()" input type="button" value="scissors"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
+        <button onclick="lizard()" input type="button" value="lizard"><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></button>
+        <button onclick="spock()" input type="button" value="spock"><i class="fa fa-hand-spock-o" aria-hidden="true"></i></button>
     </div>
     <h2>What is your choice?</h2>
 
     <!-- maybe make this a modal -->
     <div class="instructions">
         <button id="rules">Rules</button>
-        <div class="rules-body">
+        <!-- <div class="rules-body">
             <p>Scissors cuts Paper</p>
             <p>Paper covers Rock</p>
             <p>Rock crushes Lizard</p>
@@ -61,7 +61,7 @@
             <p>Paper disproves Spock</p>
             <p>Spock Vaporizes Rock</p>
             <p>(and as it always has) Rock crushes Scissors</p>
-        </div>
+        </div> -->
     </div>
 
     <!-- font awesome cdn -->
