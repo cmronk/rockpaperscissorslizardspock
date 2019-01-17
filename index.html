@@ -20,13 +20,14 @@
 
 <body>
     <header>
-        <h1>Rock Paper Scissors, Lizard Spock</h1>
+        <h2>Rock Paper Scissors, Lizard Spock</h2>
     </header>
     <div class="flex-container">
         <img src="instruct2.png" height="300px" width="300px">
         <br>
     </div>
-
+    
+    <h2>Score</h2>
     <div class="score">
         <div class="badge" id="user-label">You</div>
         <div class="badge" id="comp-label">Computer</div>
@@ -38,6 +39,9 @@
         <h2><span id="results"></span></h2>
     </div>
 
+    <h2>What is your choice?</h2>
+    <h2><span id="choice"></span></h2>
+
     <div class="choices flex-container" id="guess">
         <button onclick="rock()" input type="button" value="rock"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
         <button onclick="paper()" input type="button" value="paper"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
@@ -45,7 +49,6 @@
         <button onclick="lizard()" input type="button" value="lizard"><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></button>
         <button onclick="spock()" input type="button" value="spock"><i class="fa fa-hand-spock-o" aria-hidden="true"></i></button>
     </div>
-    <h2>What is your choice?</h2>
 
     <!-- maybe make this a modal -->
     <div class="instructions">

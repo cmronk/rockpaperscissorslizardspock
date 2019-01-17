@@ -3,50 +3,53 @@ let userScore = 0;
 let compScore = 0;
 const options = ["r", "p", "s", "l", "sp"];
 
-// update html
-function updateScore() {
-    document.getElementById("user-score").innerHTML = userScore;
-    document.getElementById("comp-score").innerHTML = compScore;
-}
-
 // get random computer guess
 function startGame() {
+    document.getElementById("results").innerHTML = "";
+    document.getElementById("user-score").innerHTML = userScore;
+    document.getElementById("comp-score").innerHTML = compScore;
     choice = options[Math.floor(Math.random() * options.length)];
     console.log(choice);
 }
 
 startGame();
 
+// update html
+function updateScore() {
+    document.getElementById("user-score").innerHTML = userScore;
+    document.getElementById("comp-score").innerHTML = compScore;
+}
+
 // get user guess
 // dry this up ... maybe a switch case?
 let userChoice = "";
 function rock() {
     userChoice = "r";
-    document.getElementById("results").innerHTML = "You Chose Rock!"
+    document.getElementById("choice").innerHTML = "You Chose Rock!"
     startGame();
     score();
 }
 function paper() {
     userChoice = "p";
-    document.getElementById("results").innerHTML = "You Chose Paper!"
+    document.getElementById("choice").innerHTML = "You Chose Paper!"
     startGame();
     score();
 }
 function scissors() {
     userChoice = "s";
-    document.getElementById("results").innerHTML = "You Chose Scissors!"
+    document.getElementById("choice").innerHTML = "You Chose Scissors!"
     startGame();
     score();
 }
 function lizard() {
     userChoice = "l";
-    document.getElementById("results").innerHTML = "You Chose Lizard!"
+    document.getElementById("choice").innerHTML = "You Chose Lizard!"
     startGame();
     score();
 }
 function spock() {
     userChoice = "sp";
-    document.getElementById("results").innerHTML = "You Chose Spock!"
+    document.getElementById("choice").innerHTML = "You Chose Spock!"
     startGame();
     score();
 }
@@ -63,7 +66,13 @@ function score() {
     if (choice === userChoice) {
         document.getElementById("results").innerHTML = "Tie!"
     }
-    if (choice === "l" && userChoice === "r") {
+    else if ((choice === "s" && userChoice === "p") || (choice === "p" && userChoice === "r") || (choice === "r" && userChoice === "l") || (choice === "sp" && userChoice === "s") || (choice === "s" && userChoice === "l") || (choice === "l" && userChoice === "p") || (choice === "p" && userChoice === "sp") || (choice === "sp" && userChoice === "r") || (choice === "r" && userChoice === "s")) {
+        document.getElementById("results").innerHTML = "You lose!";
+        compScore++;
+        console.log(userScore);
+        updateScore();
+    }
+    else {
         document.getElementById("results").innerHTML = "You win!";
         userScore++;
         console.log(userScore);

@@ -7,7 +7,7 @@
 }
 
 /* header */
-header h1 {
+header h2 {
     background: white;
     color: #15133c;
     padding: 20px;
@@ -16,6 +16,9 @@ header h1 {
 h1, h2 {
     text-align: center;
     padding: 20px;
+}
+h3 {
+    text-align: center;
 }
 .flex-container {
     display: flex;
